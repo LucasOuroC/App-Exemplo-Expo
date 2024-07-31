@@ -6,8 +6,12 @@ export default function LoginScreen({ navigation }) {
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
+    if (email == 'teste' && password == '123') {
+      navigation.replace('Home');
+    } else{
+      navigation.replace('Login');
+    }
     
-    navigation.replace('Home');
   };
 
   return (
@@ -28,7 +32,7 @@ export default function LoginScreen({ navigation }) {
         onChangeText={setPassword}
         secureTextEntry
       />
-      <Button title="Login" onPress={handleLogin} />
+      <Button style={styles.button} title="Login" onPress={handleLogin} />
     </View>
   );
 }
@@ -44,12 +48,17 @@ const styles = StyleSheet.create({
     fontSize: 24,
     marginBottom: 16,
     textAlign: 'center',
+    marginBottom: 20,
   },
   input: {
     height: 40,
-    borderColor: '#ccc',
+    borderColor: '#000000',
     borderWidth: 1,
-    marginBottom: 12,
+    borderRadius: 10,
+    marginBottom: 15,
     paddingHorizontal: 8,
+  },
+  button: {
+    borderRadius: 10,
   },
 });

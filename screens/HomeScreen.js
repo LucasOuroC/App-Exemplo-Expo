@@ -1,7 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, Button, navigation } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
+  const backLogin = () => {
+    navigation.replace('Login');
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Welcome Home!</Text>
