@@ -1,4 +1,5 @@
 PT-BR Version
+
 Esse repositorio tem como principal objetivo ser um ponto de start para um novo projeto expo.
 
 Para utilização, sera necessario:
@@ -6,9 +7,11 @@ Para utilização, sera necessario:
 -NPM versão mais recente
 
 Em terminal execute:
+
 "npm install -g expo-cli" --Para a instalação do expo CLI em seu computador
 
 "expo start" --Para execução do aplicativo(Necessario os dispositivos estarem em mesma rede)
+
 --------------------------------------------------------------------------------------------------------------------------------------------------
 En Version
 This repository's main objective is to be a starting point for a new expo project.
